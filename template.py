@@ -8,25 +8,35 @@ project_name = "Sign Language Detection"
 
 list_of_files = [
 
+    "data/.gitkeep"
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/components/__init__.py",
+    f"src/{project_name}/components/data_ingestion.py",
+    f"src/{project_name}/components/data_validation.py",
+    f"src/{project_name}/components/model_trainer.py",
+    f"src/{project_name}/components/model_pusher.py",
+    f"src/{project_name}/configurations/__init__.py",
+    f"src/{project_name}/configurations/s3_operation.py",
     f"src/{project_name}/utils/__init__.py",
-    f"src/{project_name}/utils/common.py",
-    f"src/{project_name}/config/__init__.py",
-    f"src/{project_name}/config/configuration.py",
+    f"src/{project_name}/utils/main_utils.py"
     f"src/{project_name}/pipeline/__init__.py",
+    f"src/{project_name}/pipeline/training_pipeline.py",
     f"src/{project_name}/entity/__init__.py",
+    f"src/{project_name}/entity/artifacts_entity.py",
     f"src/{project_name}/entity/config_entity.py",
     f"src/{project_name}/constants/__init__.py",
-    "config/config.yaml",
-    "params.yaml",
-    "schema.yaml",
-    "main.py",
+    f"src/{project_name}/constants/training_pipeline/__init__.py",
+    f"src/{project_name}/constants/application.py",
+    f"src/{project_name}/exceptions/__init__.py",
+    f"src/{project_name}/logger/__init__.py",
+
+
+    "template/index.html",
+    ".dockerignore",
     "app.py",
-    "requirement.txt",
-    "setup.py",
-    "research/trials.ipynb",
-    "templates/index.html"
+    "Dockerfile",
+    "requirements.txt",
+    "setup.py"
 ]
 
 
